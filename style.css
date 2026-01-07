@@ -1,0 +1,747 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Goldman:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=Goldman:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.hero_section{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.5)),url(pics/banner.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    width: 85%;
+    height: 7vh;
+    display: flex;
+    /* border: 1px solid gray; */
+   background-color: rgba(255, 255, 255,.1);
+    backdrop-filter: blur(50px);
+}
+.nav_list{
+    width: 70%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-evenly;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+input{
+    display: none;
+}
+.menu_icon{
+    display: none;
+}
+.close{
+    display: none;
+}
+#checkbox:checked + .label .menu_icon {
+    display: none;
+}
+#checkbox:checked + .label .close {
+    display: block;
+}
+
+
+
+
+
+.nav_list > ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+}
+.nav_list > ul > li, a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-family: 'Bebas Neue',sans-serif;
+    font-size: large;
+}
+.nav_login {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: aquamarine; */
+    width: 30%;
+}
+.nav_login > div{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.nav_login > div > .login{
+    width: 25px;
+}
+.nav_login > a{
+    /* border: 1px solid; */
+    padding: 10px 20px;
+    background: linear-gradient(to right, rgb(25, 12, 176),rgba(3, 5, 71, 0.9));
+}
+
+.hero_des{
+    width: 100%;
+    height: 88vh;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+}
+.hero_text{
+    width: 100%;
+    height: 65vh;
+    /* border: 1px solid white; */
+    display: flex;
+    gap: 10px   ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 0 70px; */
+     position: relative;
+}
+.hero_des > .hero_text > h1{
+    text-align: center;
+    width: 80%;
+    color: lightgray;
+    /* background: linear-gradient(to right,rgba(122,222,22,0.5),rgba()); */
+    font-family: 'Black Ops One', Arial, sans-serif;
+    font-size: 800%;
+    /* font-weight: 1000; */
+}
+.hero_des > .hero_text > strong{
+    color: lightgray;
+    width: 50%;
+    font-family: 'Goldman',sans-serif;
+    font-size: 150%;
+    font-weight: 500;
+    text-align: center;
+}
+.hero_des > .hero_text > a{
+    color: lightgray;
+    font-family: 'Bebas Neue';
+    border: 1px solid rgba(128, 128, 128, 0.504) ;
+    padding: 15px 30px ;
+    width: fit-content;
+    background-color: rgba(5, 1, 1, 0.316);
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+}
+.hero_des > .hero_text > a::before{
+    content: '';
+    width: 51%;
+    transform: translateX(-110px);
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgb(155, 5, 5);
+    position: absolute;
+    z-index: -1;
+    transition: 1s all ease;
+    
+}
+.hero_des > .hero_text > a::after{
+    content: '';
+    width: 50%;
+    transform: translateX(110px);
+    height: 100%;
+    background-color: rgb(155, 5, 5);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+     transition: 1s all ease;
+}
+.hero_des > .hero_text > a:hover::before{
+    transform: translateX(0px) rotate(180deg);
+    transition: 1s all ease;
+}
+.hero_des > .hero_text > a:hover::after{
+    transform: translateX(0px) rotate(-180deg);
+    transition: 1s all ease;
+}
+
+/* Second section start here */
+
+.second_section{
+    width: 100%;
+    height: 140vh;
+    /* border: 1px solid black; */
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* justify-content: space-around; */
+}
+.navbar_2{
+    width: 80%;
+    height: 10vh;
+    display: flex;
+    /* background-color: aquamarine; */
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar_2 > div{
+    display: flex;
+    align-items: center;
+}
+.navbar_2 > div > strong{
+    color: lightgrey;
+    font-family: 'Black Ops One', Arial, sans-serif;
+    font-size: 200%;
+    /* width: 70%; */
+    /* background-color: orange; */
+}
+.navbar_2 > p {
+    font-family: 'Goldman',sans-serif;
+    color: lightgrey;
+}
+.xbox_img{
+    width: 60px;
+
+}
+.join_btn{
+    padding: 12px 50px ;
+    background-color: darkgreen;
+    width: fit-content;
+    
+}
+.second_section_child{
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 125vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.second_section_child_1{
+    width: 60%;
+    height: 110vh;
+    /* border: 2px solid orange; */
+    display: grid;
+    /* grid-template-columns: repeat(3,40%); */
+    grid-template-columns: repeat(2,49%);
+    grid-template-rows: repeat(2,48%);
+    gap: 20px;
+}
+.second_section_child_2{
+    width: 30%;
+    height: 115vh;
+    /* border: 2px solid rgb(255, 77, 0); */
+}
+
+.one{
+    /* border: 1px solid white; */
+    color: white;
+}
+.child_1_pic_one{
+    grid-column: 1/3;
+    background: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)),url(pics/cover_1.webp);
+    /* background-image: 100%; */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: .5s all ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.child_1_pic_one:hover{
+    background-size: 105%;
+    background-position: center;
+    transition: .5s all ease;
+}
+.child_1_pic_one > div{
+    width: 85%;
+    height: 25vh;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.child_1_pic_one > div > img{
+    width: fit-content;
+}
+.child_1_pic_one > div > strong{
+    font-family: 'Black Ops One';
+    font-size: 300%;
+}
+.child_1_pic_one > div > p{
+    width: 50%;
+    font-family: 'Bebas Neue',sans-serif;
+    font-size: 120%;
+}
+.child_1_pic_one > div > a{
+    font-family: 'Black Ops One';
+}
+
+.child_1_pic_two {
+    background: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)),url(pics/cover_2.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: .5s all ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.child_1_pic_two:hover{
+    background-size: 105%;
+    background-position: center;
+    transition: .5s all ease;
+}
+.child_1_pic_two > div{
+    width: 80%;
+    height: 23vh;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.child_1_pic_two > div > h3{
+    font-family: 'Bebas Neue';
+    font-size: 150%;
+}
+.child_1_pic_two > div > strong{
+    font-family: 'Black Ops One';
+    font-size: 200%;
+    /* width: 60%; */
+}
+
+.child_1_pic_three {
+    background: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)),url(pics/cover_3.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: .5s all ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child_1_pic_three:hover{
+    background-size: 105%;
+    background-position: center;
+    transition: .5s all ease;
+}
+.child_1_pic_three > div{
+    width: 80%;
+    height: 23vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.child_1_pic_three > div > h3{
+    font-family: 'Bebas Neue';
+    font-size: 150%;
+}
+.child_1_pic_three > div > strong{
+    font-family: 'Black Ops One';
+    font-size: 200%;
+}
+
+.news_one{
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 55vh;
+}
+.news_one > .news_div_one {
+    overflow: hidden;
+}
+.news_one > .news_div_one > img{
+    width: 100%;
+    transition: .5s all ease;
+   
+}
+.news_one > .news_div_one > img:hover{
+    transform: scale(1.05);
+    transition: .5s all ease;
+}
+.news_one > .news_div_two{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aquamarine; */
+}
+.news_one > .news_div_two > a{
+    padding: 0px 6px ;
+    background-color: gray;
+}
+.second_section_child_2 > .news_one > h2{
+    font-family: 'Black Ops One';
+    font-size: 300%;
+    color: white;
+}
+.second_section_child_2 > .news_one > strong{
+    font-family:  'Bebas Neue';
+    font-weight: 200;
+    font-size: 230%;
+    color: white;
+}
+.second_section_child_2 > .news_one > .news_div_two > p{
+    font-family:  'Bebas Neue';
+    color: gray;
+}
+.news_two{
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 60vh;
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    grid-template-rows: 23% 23% 23%;
+    gap: 20px;
+    
+}
+.new_one{
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-between;
+}
+.new_one > .for_img {
+    width: 40%;
+    height: 100%;
+    /* border: 2px solid orange; */
+}
+.new_one > .for_text{
+    width: 55%;
+    height: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.new_one > .for_text > h4{
+    font-family: 'Bebas Neue';
+    color: white;
+    font-weight: 100;
+    font-size: 130%;
+}
+.new_one > .for_text > div{
+    display: flex;
+    gap: 10px;
+    /* background-color: aquamarine; */
+    /* justify-content: space-between; */
+}
+.new_one > .for_text > div > a{
+    padding: 0px 6px ;
+    background-color: gray;
+}
+.new_one > .for_text > div > p{
+    font-family: 'Bebas Neue';
+    color: gray;
+}
+.new_one > div > img{
+    width: 100%;
+    height: 100%;
+    transition: .5s all ease;
+}
+.for_img{
+    overflow: hidden;
+}
+.news_pics:hover{
+    transform: scale(1.05);
+    transition: .5s all ease;
+}
+.get_btn_div{
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 5vh;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.get_more_btn{
+    padding: 10px 50px;
+    width: fit-content;
+    /* background-color: aquamarine; */
+    border: 1px solid rgb(152, 149, 149);
+}
+.line1{
+    width: 100px;
+    /* height: 1px; */
+    border: 1px solid gray;
+}
+.line2{
+    width: 100px;
+    /* height: .1vh; */
+    border: 1px solid gray;
+}
+body{
+    background-color: rgb(30, 30, 30);
+}
+
+/* Second section end here */
+/* Third Section Start here */
+.third_section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.third_child_one{
+    width: 90%;
+    height: 10vh;
+    border: 1px solid orange;
+}
+.third_child_one > strong{
+    color: white;
+    font-family: 'Bebas Neue';
+    font-size: 350%
+}
+.third_child_two{
+    width: 90%;
+    height: 60vh;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(4,23%);
+    justify-content: space-between;
+    
+}
+
+.third_one{
+    border: 1px solid white;
+    height: 59vh;
+    position: relative;
+    border-radius: 7px;
+}
+.third_one > img{
+    width: 15rem;
+    position: absolute;
+    top: 14.5rem;
+    left: 30px;
+}
+.th_one > .product_bar{
+    width: 100%;
+    height: 16vh;
+    background-color: rgb(38, 38, 44);
+    position: absolute;
+    bottom: 0;
+    border-radius: 7px;
+}
+.th_one> .product_bar > .discount_bar{
+    width: 100%;
+    height: 3.5vh;
+    background-color: rgb(2, 112, 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.th_two > .product_bar{
+    width: 100%;
+    height: 16vh;
+    background-color: rgb(38, 38, 44);
+    position: absolute;
+    bottom: 0;
+    border-radius: 7px;
+}
+.th_two > .product_bar > .discount_bar{
+    width: 100%;
+    height: 3.5vh;
+    background-color: rgb(2, 112, 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.th_three > .product_bar{
+    width: 100%;
+    height: 13vh;
+    background-color: rgb(38, 38, 44);
+    position: absolute;
+    bottom: 0;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.th_four > .product_bar{
+    width: 100%;
+    height: 13vh;
+    background-color: rgb(38, 38, 44);
+    position: absolute;
+    bottom: 0;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.product_name{
+    width: 100%;
+    height: 5vh;
+    padding: 5px 20px;
+}
+.product_icons{
+    height: 5vh;
+    /* background-color: aquamarine; */
+    position: absolute;
+    bottom: 0;
+    padding: 5px 20px;
+}
+.third_one > .product_bar > .discount_bar > strong{
+    color: white;
+    font-family: 'Bebas Neue';
+    font-weight: 200;
+}
+.third_one > .product_bar > .product_name > h4{
+    font-family:  'Bebas Neue';
+    color: white;
+    font-size: 110%;
+    font-weight: 100;
+}
+.third_one > .product_bar > .product_name > strong{
+    font-family: 'Black Ops One' ; 
+    color: white;
+    font-weight: 300;
+    font-size: 130%
+}
+.th_one{
+    background: linear-gradient(to top, rgba(0,0,0,1),rgba(0,0,0,0.1)),url(pics/product_1.webp);
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.th_two{
+    background: linear-gradient(to top,rgba(0,0,0,1),rgba(0,0,0,0.1)),url(pics/product_2.webp);
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.th_three{
+    background: linear-gradient(to top,rgba(0,0,0,1),rgba(0,0,0,0.1)),url(pics/product_3.webp);
+    background-position: top;
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+.th_four{
+    background: linear-gradient(to top,rgba(0,0,0,1),rgba(0,0,0,0.1)),url(pics/product_4.webp);
+    background-position: top;
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+.third_child_third{
+    width: 90%;
+    height: 10vh;
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.third_child_third > a{
+    border: 1px solid white;
+    padding: 10px 50px;
+}
+
+/* Third Section End here */
+/* Four section start here  */
+.four_section{
+    width: 100%;
+    height: 110vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.four_one{
+    width: 100%;
+    height: 10vh;
+    background-color: orange;
+}
+.four_one > ul, li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.four_two{
+    width: 100%;
+    height: 50vh;
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 10px;
+}
+.box_1pic{
+    width: 150px;
+}
+.four_two_box1{
+    width: 100%;
+    height: 20vh;
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: repeat(6,15%);
+    justify-content: center;gap: 10px;
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+}
+.four_two_box2{
+    width: 100%;
+    height: 20vh;
+    /* border: 2px solid black; */
+     display: grid;
+    grid-template-columns: repeat(5,15%);
+    justify-content: center;
+    gap: 10px;
+}
+.four_three{
+    width: 100%;
+    height: 50vh;
+    background-color: lightpink;
+    display: flex;
+    /* flex-direction: column;
+    align-items: center; */
+    justify-content:  center ;
+}
+.four_three > div{
+    width: 40%;
+    height: 100%;
+    background-color: aquamarine;
+}
+.last_div1{
+    width: 100%;
+    height: 25vh;
+    border: 1px solid;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    gap: 10px;
+}
+.last_div2{
+    width: 100%;
+    height: 25vh;
+    border: 1px solid;
+}
+.last_pic_1{
+    width: 87px;
+}
+.last_pic_2{
+    width: 200px;
+}
+/* Four section end here  */
