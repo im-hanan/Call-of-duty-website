@@ -39,7 +39,7 @@ nav{
     align-items: center;
 }
 
-input{
+#checkbox{
     display: none;
 }
 .menu_icon{
@@ -178,14 +178,14 @@ input{
 
 .second_section{
     width: 100%;
-    height: 140vh;
+    height: 150vh;
     /* border: 1px solid black; */
     background-color: rgb(27, 27, 27);
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    /* justify-content: space-around; */
+    justify-content: space-around;
 }
 .navbar_2{
     width: 80%;
@@ -503,7 +503,7 @@ body{
 .third_child_one{
     width: 90%;
     height: 10vh;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
 }
 .third_child_one > strong{
     color: white;
@@ -513,7 +513,7 @@ body{
 .third_child_two{
     width: 90%;
     height: 60vh;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: grid;
     grid-template-columns: repeat(4,23%);
     justify-content: space-between;
@@ -521,10 +521,11 @@ body{
 }
 
 .third_one{
-    border: 1px solid white;
+    /* border: 1px solid white; */
     height: 59vh;
     position: relative;
     border-radius: 7px;
+    
 }
 .third_one > img{
     width: 15rem;
@@ -618,29 +619,43 @@ body{
     background-position: top;
     background-size: 100%;
     background-repeat: no-repeat;
+    transition: .5s all ease;
 }
 .th_two{
     background: linear-gradient(to top,rgba(0,0,0,1),rgba(0,0,0,0.1)),url(pics/product_2.webp);
     background-position: top;
     background-size: 100%;
     background-repeat: no-repeat;
+    transition: .5s all ease;
 }
 .th_three{
     background: linear-gradient(to top,rgba(0,0,0,1),rgba(0,0,0,0.1)),url(pics/product_3.webp);
     background-position: top;
     background-size: 110%;
     background-repeat: no-repeat;
+   transition: .5s all ease;
 }
 .th_four{
     background: linear-gradient(to top,rgba(0,0,0,1),rgba(0,0,0,0.1)),url(pics/product_4.webp);
     background-position: top;
     background-size: 110%;
     background-repeat: no-repeat;
+    transition: .5s all ease;
+}
+.third_one:hover{
+    background-size: 105%;
+    transition: .5s all ease;
+}
+.th_three:hover{
+    background-size: 115%;
+}
+.th_four:hover{
+    background-size: 115%;
 }
 .third_child_third{
     width: 90%;
     height: 10vh;
-    border: 1px solid rgb(255, 255, 255);
+    /* border: 1px solid rgb(255, 255, 255); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -649,6 +664,31 @@ body{
 .third_child_third > a{
     border: 1px solid white;
     padding: 10px 50px;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    transition: .8s all ease;
+}
+.third_child_third > a::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: .8s all ease;
+    position: absolute;
+    top: 0;
+    left: -205px;
+    z-index: -1;
+}
+.third_child_third > a:hover{
+    color: black;
+    font-family:  'Bebas Neue';
+    
+}
+.third_child_third > a:hover::before{
+    left: 0px;
+    overflow: visible;
+    transition: .8s all ease;
 }
 
 /* Third Section End here */
@@ -659,89 +699,118 @@ body{
     background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
+    justify-content:space-around ;
     align-items: center;
 }
-.four_one{
-    width: 100%;
+.about_info_1{
+    width: 90%;
     height: 10vh;
-    background-color: orange;
+    /* border: 2px solid white; */
 }
-.four_one > ul, li {
-    height: 100%;
+.about_info_1 > ul{
     display: flex;
+    width: 100%;
+    height: 100%;
     align-items: center;
     justify-content: space-evenly;
+}
+.about_info_1 > ul > li{
+    color: white;
     list-style: none;
+    font-family: 'Bebas Neue';
+    font-size: 130%;
+    opacity: 0.5;
+
 }
-.four_two{
-    width: 100%;
-    height: 50vh;
-    background-color: lightgreen;
+.about_info_2{
+    width: 90%;
+    height: 40vh;
+    /* border: 2px solid rgb(50, 2, 244); */
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(5,12%);
+    justify-content: space-evenly;
+}
+.about_info_2 > div{
+    /* border: 1px solid orange; */
+    /* width: 20%; */
+    height: 20vh;
     display: flex;
-    flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
-    gap: 10px;
 }
-.box_1pic{
+.about_info_2 > div > img{
     width: 150px;
 }
-.four_two_box1{
-    width: 100%;
-    height: 20vh;
-    /* border: 2px solid black; */
-    display: grid;
-    grid-template-columns: repeat(6,15%);
-    justify-content: center;gap: 10px;
-}
-.box1{
+.about_info_3{
+    width: 90%;
+    height: 40vh;
+    /* border: 2px solid rgb(140, 255, 0); */
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    border: 1px solid;
+    justify-content: space-between;
 }
-.four_two_box2{
-    width: 100%;
+.about_info_3 > div{
+    width: 25%;
     height: 20vh;
-    /* border: 2px solid black; */
-     display: grid;
-    grid-template-columns: repeat(5,15%);
-    justify-content: center;
-    gap: 10px;
-}
-.four_three{
-    width: 100%;
-    height: 50vh;
-    background-color: lightpink;
+    /* border: 1px solid white; */
     display: flex;
-    /* flex-direction: column;
-    align-items: center; */
-    justify-content:  center ;
+    align-items: center;
+    justify-content: space-between;
+    
 }
-.four_three > div{
-    width: 40%;
+.bage1{
+    width: 100px;
+}
+.bage2{
+    width: 220px;
+}
+.about_info_3 > p{
+    color: white;
+    font-family: 'Bebas Neue';
+    opacity: 0.7;
+    word-spacing: 10px;
+
+}
+.about_info_3 > .Cookie{
+    border: 1px solid white;
+    padding: 12px 50px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.about_info_3 > .Cookie::before{
+    content: "";
+    width: 100%;
     height: 100%;
-    background-color: aquamarine;
+    background-color: white;
+    transition: .8s all ease;
+    position: absolute;
+    top: 0;
+    left: -200px;
+    z-index: -1;
 }
-.last_div1{
-    width: 100%;
-    height: 25vh;
-    border: 1px solid;
-    display: flex;
-    align-items: center ;
-    justify-content: center;
-    gap: 10px;
+.about_info_3 > .Cookie:hover{
+    color: black;
+    font-family:  'Bebas Neue';
+    font-weight: 400;
+    
 }
-.last_div2{
-    width: 100%;
-    height: 25vh;
-    border: 1px solid;
+.about_info_3 > .Cookie:hover::before{
+    left: 0px;
+    overflow: visible;
+    transition: .8s all ease;
 }
-.last_pic_1{
-    width: 87px;
+.germany{
+    width: 40px;
 }
-.last_pic_2{
-    width: 200px;
+#flag_check{
+    background-color: aliceblue;
+}
+.me:hover{
+    color: orange;
+    text-decoration: underline;
 }
 /* Four section end here  */

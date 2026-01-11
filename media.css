@@ -42,7 +42,7 @@
     }
     /* second section start here */
     .second_section{
-        height: 250vh;
+        height: 260vh;
     }
     .navbar_2{
         flex-direction: column;
@@ -130,6 +130,34 @@
         left: 50px;
         top: 16rem;
     }
+    /* Four Section start here */
+    .four_section{
+        height: 200vh;
+        justify-content: space-around;
+    }
+    .about_info_1{
+        height: 50vh;
+    }
+    .about_info_1 > ul{
+        flex-direction: column;
+    }
+    .about_info_2{
+        height: 100vh;
+        grid-template-columns: repeat(2,50%);
+    }
+    .about_info_3 > div{
+        width: 100%;
+        justify-content: center;
+        gap: 5px;
+    }
+    .bage1{
+     width: 70px;
+    }
+    .bage2{
+     width: 155px;
+    }
+    
+    /* Four Section end here */
 }
     
     /* third_section end here */
@@ -245,5 +273,29 @@
         /* background-color: yellowgreen; */
     }
     /* .four_two{} */
-}
     /* third_section end here */
+    /* Four section start here */
+    .four_section{
+        height: 200vh;
+        justify-content: space-around;
+    }
+    .about_info_1{
+        height: 50vh;
+    }
+    .about_info_1 > ul{
+        flex-direction: column;
+    }
+    .about_info_2{
+        height: 100vh;
+        grid-template-columns: repeat(2,50%);
+    }
+    .about_info_2 > div > img{
+        width: 200px;
+    }
+    .about_info_3 > div{
+        width: 100%;
+        justify-content: center;
+        gap: 5px;
+    }
+    /* Four section end here */
+}
