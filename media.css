@@ -116,7 +116,7 @@
     /* third_section start here */
     .third_section{
         height: 270vh;
-        background-color: aquamarine;
+        /* background-color: aquamarine; */
         justify-content: start;
     }
     .third_child_two{
