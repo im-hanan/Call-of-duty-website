@@ -103,7 +103,7 @@ nav{
 .hero_text{
     width: 100%;
     height: 75vh;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     display: flex;
     gap: 15px   ;
     flex-direction: column;
